@@ -1,6 +1,6 @@
-use vendas_sucos;
-
 SELECT * FROM clientes;
+
+/* Comando INSERT INTO utilizado para inserir dados nas tabelas*/
 
 INSERT INTO CLIENTES
 VALUES ('11471156710', 'Érica Carvalho', 'R. Iriquitia', 'Jardins', 'São Paulo', 'SP', '80012212',
@@ -25,7 +25,7 @@ FROM sucos_vendas.tabela_de_produtos;
 
 SELECT * FROM PRODUTOS;
 
-UPDATE VENDEDORES SET NOME = 'Márcio Almeida Silva' WHERE MATRICULA = '235';
+UPDATE VENDEDORES SET NOME = 'Márcio Almeida Silva' WHERE MATRICULA = '235'; /* Comando UPDATE utilizado para atualizar informações */
 UPDATE VENDEDORES SET NOME = 'Cláudia Morais' WHERE MATRICULA = '236';
 UPDATE VENDEDORES SET NOME = 'Péricles Alves' WHERE MATRICULA = '238';
 
