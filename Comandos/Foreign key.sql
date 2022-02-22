@@ -1,4 +1,6 @@
 	/*CRIANDO TABELA COM FOREIGN KEY*/
+   -- Foreign key são as informações que são idênticas em duas tabelas--
+   
 ALTER TABLE NOTAS ADD CONSTRAINT FK_CLIENTES 
 FOREIGN KEY (CPF) REFERENCES CLIENTES (CPF);
 
