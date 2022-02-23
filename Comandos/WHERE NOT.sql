@@ -1,22 +1,24 @@
-select * from tabela_de_produtos where sabor = 'manga'
-or TAMANHO = '470 ml';
+/* Função WHERE utilizada para especificar uma pesquisa*/
 
-select * from tabela_de_produtos where sabor = 'manga'
-and TAMANHO = '470 ml';
+SELECT * FROM tabela_de_produtos WHERE sabor = 'manga'
+OR TAMANHO = '470 ml';
 
-select * from tabela_de_produtos where not (sabor = 'manga'
-or TAMANHO = '470 ml');
+SELECT * FROM tabela_de_produtos WHERE sabor = 'manga'
+AND TAMANHO = '470 ml';
 
-select * from tabela_de_produtos where not (sabor = 'manga'
-and TAMANHO = '470 ml');
+SELECT * FROM tabela_de_produtos WHERE NOT (sabor = 'manga'
+OR TAMANHO = '470 ml');
 
-select * from tabela_de_produtos where sabor = 'manga'
-and not (TAMANHO = '470 ml');
+SELECT * FROM tabela_de_produtos WHERE NOT (sabor = 'manga'
+AND TAMANHO = '470 ml');
 
-select * from tabela_de_produtos where sabor in ('laranja', 'manga');
+SELECT * FROM tabela_de_produtos WHERE sabor = 'manga'
+AND NOT (TAMANHO = '470 ml');
 
-select * from tabela_de_clientes where cidade in ('rio de janeiro', 'sao paulo')
-and idade >=20;
+SELECT * FROM tabela_de_produtos WHERE sabor IN ('laranja', 'manga');
 
-select * from tabela_de_clientes where cidade in ('rio de janeiro', 'sao paulo')
-and (idade >= 20 and idade <= 22);
+SELECT * FROM tabela_de_clientes WHERE cidade IN ('rio de janeiro', 'sao paulo')
+AND idade >=20;
+
+SELECT * FROM tabela_de_clientes WHERE cidade IN ('rio de janeiro', 'sao paulo')
+AND (idade >= 20 AND idade <= 22);
