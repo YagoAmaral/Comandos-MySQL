@@ -1,5 +1,9 @@
-alter table tbcliente add primary key (CPF);
-alter table tbcliente add column (DATA_NASCIMENTO DATE);
+/* ALTER TABLE comando para alterar dados e ADD utilizado para adicionar dados*/
+ -- A PRIMARY KEY é a coluna de dados que não se repetiram no banco de dados -- 
+
+ALTER TABLE tbcliente ADD PRIMARY KEY (CPF);
+
+ALTER TABLE tbcliente ADD COLUMN (DATA_NASCIMENTO DATE);
 
 INSERT INTO	tbcliente (
 CPF, NOME, ENDERECO1, ENDERECO2, BAIRRO, CIDADE, ESTADO, CEP, IDADE, SEXO, LIMITE_CREDITO,
@@ -11,6 +15,5 @@ VOLUME_COMPRA, PRIMEIRA_COMPRA, DATA_NASCIMENTO) VALUES (
 ('00388934053', 'Artur Campos', 'A Costa','', 'Cidade Onirica','Ultimo Desejo', 'Tita Matadeiro', '44444444',
 30, 'M', 40000.00, 2003, 0, '1990-05-12');
 
-
-select * from tbcliente;
+SELECT * FROM tbcliente;
 
